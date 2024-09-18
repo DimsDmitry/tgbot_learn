@@ -8,7 +8,7 @@ bot = telebot.TeleBot('7000307834:AAFTB_6tcIWufjjYtNo6aNp4MTbmf4iBWco')
 @bot.message_handler(commands=['site', 'website'])
 # при вызове одной из команд открывает веб-страницу в браузере
 def site(message):
-    webbrowser.open('https://itproger.com/')
+    webbrowser.open('https://algoritmikashop.ru/')
 
 
 @bot.message_handler(commands=['start', 'main', 'hello'])
