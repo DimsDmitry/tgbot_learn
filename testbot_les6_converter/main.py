@@ -4,11 +4,13 @@ from telebot import *
 import requests
 from currency_converter import CurrencyConverter
 
+from key import SECRET_KEY
 
-bot = telebot.TeleBot('7530134956:AAG0eNszJK6lO3Hc_b-HiPdQRr6-8MZyWYQ')
+bot = telebot.TeleBot(SECRET_KEY)
 # API = '135b46a59fd34bb8f2b485d430aa50d7'
 currency = CurrencyConverter()
 amount = 0
+bot.delete_webhook()
 
 
 @bot.message_handler(commands=['start'])
